@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     //创建一个窗口
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    sleep(2);
     //创建控制器
     self.window.rootViewController = [[WXTableBarViewController alloc]init];
     //可见

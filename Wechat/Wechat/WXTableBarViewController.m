@@ -7,6 +7,7 @@
 //
 
 #import "WXTableBarViewController.h"
+#import "BaseNavigationController.h"
 
 @interface WXTableBarViewController ()
 
@@ -18,13 +19,13 @@
     [super viewDidLoad];
 
     //设置底部属性
-    UITableViewController *homeVC = [[UITableViewController alloc]init];
+    BaseNavigationController *homeVC = [[BaseNavigationController alloc]init];
     [self addChildViewController:homeVC showImage:@"tabbar_mainframe" mainTitle:@"微信"];
-    UITableViewController *tongXunLuVC = [[UITableViewController alloc]init];
+    BaseNavigationController *tongXunLuVC = [[BaseNavigationController alloc]init];
     [self addChildViewController:tongXunLuVC showImage:@"tabbar_contacts" mainTitle:@"通信录"];
-    UITableViewController *discoverVC = [[UITableViewController alloc]init];
+    BaseNavigationController *discoverVC = [[BaseNavigationController alloc]init];
     [self addChildViewController:discoverVC showImage:@"tabbar_discover" mainTitle:@"发现"];
-    UITableViewController *meVC = [[UITableViewController alloc]init];
+    BaseNavigationController *meVC = [[BaseNavigationController alloc]init];
     [self addChildViewController:meVC showImage:@"tabbar_me" mainTitle:@"我"];
     
 }
@@ -36,14 +37,13 @@
     //选中图片
     childController.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@HL",imageName]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childController.tabBarItem.title = title;
-    //默认文字的颜色是灰色
+    childController.navigationItem.title = title;
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-//    dict[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-//    [childController.tabBarItem setTitleTextAttributes:dict forState:UIControlStateNormal];
     //设置选中文字颜色
     dict[NSForegroundColorAttributeName] = [UIColor colorWithRed:14.0/255.0 green:180.0/255.0 blue:0.0/255.0 alpha:1.0];
     [childController.tabBarItem setTitleTextAttributes:dict forState:UIControlStateSelected];
-    [self addChildViewController:childController];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:childController];
+    [self addChildViewController:nav];
 
 }
 
