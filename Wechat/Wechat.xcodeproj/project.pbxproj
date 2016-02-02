@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		846247F81C5F57F000A17A89 /* WXTableBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846247F71C5F57F000A17A89 /* WXTableBarViewController.m */; };
 		8462482D1C60092B00A17A89 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462482C1C60092B00A17A89 /* BaseNavigationController.m */; };
+		846248301C600ECA00A17A89 /* WeiXinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462482F1C600ECA00A17A89 /* WeiXinTableViewController.m */; };
+		846248371C6013C800A17A89 /* UIBarButtonItem+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 846248361C6013C800A17A89 /* UIBarButtonItem+Extention.m */; };
+		8462483D1C6016DD00A17A89 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462483C1C6016DD00A17A89 /* UIView+Extension.m */; };
+		846248411C6021B700A17A89 /* tongXunLuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846248401C6021B700A17A89 /* tongXunLuController.m */; };
 		847964F01C5F3FDE00142306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847964EF1C5F3FDE00142306 /* main.m */; };
 		847964F31C5F3FDE00142306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847964F21C5F3FDE00142306 /* AppDelegate.m */; };
 		847964F61C5F3FDE00142306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847964F51C5F3FDE00142306 /* ViewController.m */; };
@@ -20,6 +24,14 @@
 		846247F71C5F57F000A17A89 /* WXTableBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTableBarViewController.m; sourceTree = "<group>"; };
 		8462482B1C60092B00A17A89 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		8462482C1C60092B00A17A89 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8462482E1C600ECA00A17A89 /* WeiXinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiXinTableViewController.h; sourceTree = "<group>"; };
+		8462482F1C600ECA00A17A89 /* WeiXinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiXinTableViewController.m; sourceTree = "<group>"; };
+		846248351C6013C800A17A89 /* UIBarButtonItem+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extention.h"; sourceTree = "<group>"; };
+		846248361C6013C800A17A89 /* UIBarButtonItem+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extention.m"; sourceTree = "<group>"; };
+		8462483B1C6016DD00A17A89 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8462483C1C6016DD00A17A89 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8462483F1C6021B700A17A89 /* tongXunLuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tongXunLuController.h; sourceTree = "<group>"; };
+		846248401C6021B700A17A89 /* tongXunLuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tongXunLuController.m; sourceTree = "<group>"; };
 		847964EB1C5F3FDE00142306 /* Wechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847964EF1C5F3FDE00142306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		847964F11C5F3FDE00142306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +67,10 @@
 				846247F71C5F57F000A17A89 /* WXTableBarViewController.m */,
 				8462482B1C60092B00A17A89 /* BaseNavigationController.h */,
 				8462482C1C60092B00A17A89 /* BaseNavigationController.m */,
+				846248351C6013C800A17A89 /* UIBarButtonItem+Extention.h */,
+				846248361C6013C800A17A89 /* UIBarButtonItem+Extention.m */,
+				8462483B1C6016DD00A17A89 /* UIView+Extension.h */,
+				8462483C1C6016DD00A17A89 /* UIView+Extension.m */,
 			);
 			name = Command;
 			sourceTree = "<group>";
@@ -69,6 +85,8 @@
 		846247FF1C5FD1E300A17A89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8462483E1C60218500A17A89 /* tongXunLu */,
+				846248311C6012FC00A17A89 /* WeiXin */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -87,6 +105,24 @@
 				847964F51C5F3FDE00142306 /* ViewController.m */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		846248311C6012FC00A17A89 /* WeiXin */ = {
+			isa = PBXGroup;
+			children = (
+				8462482E1C600ECA00A17A89 /* WeiXinTableViewController.h */,
+				8462482F1C600ECA00A17A89 /* WeiXinTableViewController.m */,
+			);
+			name = WeiXin;
+			sourceTree = "<group>";
+		};
+		8462483E1C60218500A17A89 /* tongXunLu */ = {
+			isa = PBXGroup;
+			children = (
+				8462483F1C6021B700A17A89 /* tongXunLuController.h */,
+				846248401C6021B700A17A89 /* tongXunLuController.m */,
+			);
+			name = tongXunLu;
 			sourceTree = "<group>";
 		};
 		847964E21C5F3FDE00142306 = {
@@ -201,9 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				846247F81C5F57F000A17A89 /* WXTableBarViewController.m in Sources */,
+				846248301C600ECA00A17A89 /* WeiXinTableViewController.m in Sources */,
 				8462482D1C60092B00A17A89 /* BaseNavigationController.m in Sources */,
+				846248411C6021B700A17A89 /* tongXunLuController.m in Sources */,
 				847964F61C5F3FDE00142306 /* ViewController.m in Sources */,
 				847964F31C5F3FDE00142306 /* AppDelegate.m in Sources */,
+				846248371C6013C800A17A89 /* UIBarButtonItem+Extention.m in Sources */,
+				8462483D1C6016DD00A17A89 /* UIView+Extension.m in Sources */,
 				847964F01C5F3FDE00142306 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,30 +1,28 @@
 //
-//  BaseNavigationController.m
+//  WeiXinTableViewController.m
 //  Wechat
 //
 //  Created by admin on 16/2/2.
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import "BaseNavigationController.h"
+#import "WeiXinTableViewController.h"
+#import "UIBarButtonItem+Extention.h"
 
-
-@interface BaseNavigationController ()
+@interface WeiXinTableViewController ()
 
 @end
 
-@implementation BaseNavigationController
+@implementation WeiXinTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-   
+     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemSetImage:@"tabbar_compose_icon_add" Target:self action:@selector(pp)];
 }
-
+- (void)pp{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -9,6 +9,9 @@
 #import "WXTableBarViewController.h"
 #import "BaseNavigationController.h"
 
+#import "WeiXinTableViewController.h"
+#import "tongXunLuController.h"
+
 @interface WXTableBarViewController ()
 
 @end
@@ -19,9 +22,9 @@
     [super viewDidLoad];
 
     //设置底部属性
-    BaseNavigationController *homeVC = [[BaseNavigationController alloc]init];
+    WeiXinTableViewController *homeVC = [[WeiXinTableViewController alloc]init];
     [self addChildViewController:homeVC showImage:@"tabbar_mainframe" mainTitle:@"微信"];
-    BaseNavigationController *tongXunLuVC = [[BaseNavigationController alloc]init];
+    tongXunLuController *tongXunLuVC = [[tongXunLuController alloc]init];
     [self addChildViewController:tongXunLuVC showImage:@"tabbar_contacts" mainTitle:@"通信录"];
     BaseNavigationController *discoverVC = [[BaseNavigationController alloc]init];
     [self addChildViewController:discoverVC showImage:@"tabbar_discover" mainTitle:@"发现"];
@@ -43,6 +46,9 @@
     dict[NSForegroundColorAttributeName] = [UIColor colorWithRed:14.0/255.0 green:180.0/255.0 blue:0.0/255.0 alpha:1.0];
     [childController.tabBarItem setTitleTextAttributes:dict forState:UIControlStateSelected];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:childController];
+///  设置导航条的背景颜色
+    [nav.navigationBar setBarTintColor:[UIColor blueColor]];
+    [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self addChildViewController:nav];
 
 }
